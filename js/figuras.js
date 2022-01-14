@@ -77,3 +77,28 @@ function calcularPerimetroTriangulo(){
     const perimetro = perimetroTriangulo(valueLadoA, valueLadoB, valueBase);
     alert(perimetro);
 }
+
+function calcularAreaTriangulo(){
+    const inputBase = document.getElementById("inputBaseTriangulo");
+    const valueBase = Number(inputBase.value);
+    const inputAltura = document.getElementById("inputAlturaTriangulo");
+    const valueAltura = Number(inputAltura.value);
+    const area = areaTriangulo(valueBase, valueAltura);
+    alert(area);
+}
+
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("inputRadioCirculo");
+    const value = Number(input.value);
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputRadioCirculo");
+    const value = Number(input.value);
+    const area = areaCirculo(value);
+    alert(area);
+}
+
+
