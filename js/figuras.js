@@ -56,10 +56,24 @@ function calcularPerimetroCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
-    console.log(perimetro);
+    alert(perimetro);
 }
-console.log(calcularPerimetroCuadrado());
 
-function calcularPerimetroCuadrado(){
-    
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+function calcularPerimetroTriangulo(){
+    const inputLadoA = document.getElementById("inputLadoATriangulo");
+    const valueLadoA = inputLadoA.value;
+    const inputLadoB = document.getElementById("inputLadoBTriangulo");
+    const valueLadoB = inputLadoB.value;
+    const inputBase = document.getElementById("inputBaseTriangulo");
+    const valueBase = inputBase.value;
+    const perimetro = perimetroTriangulo(valueLadoA, valueLadoB, valueBase);
+    console.log(perimetro);
 }
